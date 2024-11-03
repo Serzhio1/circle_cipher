@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.077" tests="19" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/serezha/javaProjects/pet_projects/circle_cipher/target/test-classes:/home/serezha/javaProjects/pet_projects/circle_cipher/target/classes:/home/serezha/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/serezha/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-22.0.2-oracle-x64/lib"/>
+    <property name="sun.java.command" value="/home/serezha/javaProjects/pet_projects/circle_cipher/target/surefire/surefirebooter-20241103123656525_3.jar /home/serezha/javaProjects/pet_projects/circle_cipher/target/surefire 2024-11-03T12-36-56_295-jvmRun1 surefire-20241103123656525_1tmp surefire_0-20241103123656525_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="com.serzhio_pet_projects.encoder.RleEncoderTest"/>
+    <property name="surefire.test.class.path" value="/home/serezha/javaProjects/pet_projects/circle_cipher/target/test-classes:/home/serezha/javaProjects/pet_projects/circle_cipher/target/classes:/home/serezha/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/serezha/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/serezha"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/usr/lib/jvm/jdk-22.0.2-oracle-x64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/serezha/javaProjects/pet_projects/circle_cipher"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/serezha/javaProjects/pet_projects/circle_cipher/target/surefire/surefirebooter-20241103123656525_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.2+9-70"/>
+    <property name="user.name" value="serezha"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.1.0-26-amd64"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/home/serezha/.vscode/extensions/oracle.oracle-java-23.0.0/nbcode/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/home/serezha/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="/home/serezha/javaProjects/pet_projects/circle_cipher"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.2+9-70"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="testEncodeFullText_oneWord_10" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.005"/>
+  <testcase name="testEncodeFullText_oneWord_11" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_oneWord_12" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_oneWord_13" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_oneWord_14" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.001"/>
+  <testcase name="testEncodeFullText_oneWord_1" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_oneWord_2" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_oneWord_3" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_oneWord_4" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_oneWord_5" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_oneWord_6" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_oneWord_7" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_oneWord_8" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.001"/>
+  <testcase name="testEncodeFullText_oneWord_9" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.001"/>
+  <testcase name="testEncodeFullText_someWords_1" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.001"/>
+  <testcase name="testEncodeFullText_someWords_2" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.001"/>
+  <testcase name="testEncodeFullText_someWords_3" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+  <testcase name="testEncodeFullText_someWords_4" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.001"/>
+  <testcase name="testEncodeFullText_someWords_5" classname="com.serzhio_pet_projects.encoder.RleEncoderTest" time="0.0"/>
+</testsuite>
