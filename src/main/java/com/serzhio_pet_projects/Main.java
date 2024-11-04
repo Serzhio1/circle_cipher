@@ -24,7 +24,7 @@ public class Main {
             InputFileReader inputFileReader = new InputFileReader(pathToInputFile);
             String inputData = inputFileReader.readTextFromFile();
 
-            String compressedText = RleEncoder.encodeFullText(inputData);
+            String compressedText = RleEncoder.encode(inputData);
 
             outputFileWriter.writeCompressedTextToFile(compressedText);
             System.out.println("Сжатый текст находится в новом файле, по пути: " + pathToOutputFile);

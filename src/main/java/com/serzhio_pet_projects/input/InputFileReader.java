@@ -19,14 +19,12 @@ public class InputFileReader {
 
     public String readTextFromFile() throws FileNotFoundException, IOException {
         StringBuilder result = new StringBuilder();
-
         try(BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath))) {
             String line;
 
             while((line=bufferedReader.readLine()) != null) {
                 result.append(line);
                 result.append(" ");
-
             return result.toString();
             }
         }
@@ -36,7 +34,6 @@ public class InputFileReader {
     public static String getPathToInputFile(Scanner scanner) {
             System.out.print("Введите абсолютный путь к файлу: ");
             String pathToInputFile = scanner.nextLine();
-            
             return pathToInputFile;
         }
 
