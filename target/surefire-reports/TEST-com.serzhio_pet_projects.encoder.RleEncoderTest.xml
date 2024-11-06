@@ -12,7 +12,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-22.0.2-oracle-x64/lib"/>
-    <property name="sun.java.command" value="/home/serezha/javaProjects/pet_projects/circle_cipher/target/surefire/surefirebooter-20241106190826237_3.jar /home/serezha/javaProjects/pet_projects/circle_cipher/target/surefire 2024-11-06T19-08-26_165-jvmRun1 surefire-20241106190826237_1tmp surefire_0-20241106190826237_2tmp"/>
+    <property name="sun.java.command" value="/home/serezha/javaProjects/pet_projects/circle_cipher/target/surefire/surefirebooter-20241107004009318_3.jar /home/serezha/javaProjects/pet_projects/circle_cipher/target/surefire 2024-11-07T00-40-09_220-jvmRun1 surefire-20241107004009318_1tmp surefire_0-20241107004009318_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="${packageClassName}"/>
     <property name="surefire.test.class.path" value="/home/serezha/javaProjects/pet_projects/circle_cipher/target/test-classes:/home/serezha/javaProjects/pet_projects/circle_cipher/target/classes:/home/serezha/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/serezha/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/serezha/javaProjects/pet_projects/circle_cipher/target/surefire/surefirebooter-20241106190826237_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/serezha/javaProjects/pet_projects/circle_cipher/target/surefire/surefirebooter-20241107004009318_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2+9-70"/>
     <property name="user.name" value="serezha"/>

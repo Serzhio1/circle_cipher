@@ -34,7 +34,11 @@ public class RleEncoder {
                 } else {
                     if (word.charAt(i)==word.charAt(i+1)) {
                         countSameChars++;
-                        compressedWord.append(countSameChars).append(word.charAt(i));
+                        if (countSameChars==2) {
+                            compressedWord.append(word.charAt(i)).append(word.charAt(i));
+                        } else {
+                            compressedWord.append(countSameChars).append(word.charAt(i));
+                        }
                     } else {
                         compressedWordAppendChars(compressedWord, countSameChars, word, i);
                         compressedWord.append(word.charAt(i+1));

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.serzhio_pet_projects.decoder.RleDecoderTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s -- in com.serzhio_pet_projects.decoder.RleDecoderTest

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.serzhio_pet_projects.input.InputFileVerifierTest" time="0.001" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.067" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -55,10 +55,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testCheckPathToInputFile_notFile6" classname="com.serzhio_pet_projects.input.InputFileVerifierTest" time="0.0"/>
-  <testcase name="testCheckPathToInputFile_notFile_1" classname="com.serzhio_pet_projects.input.InputFileVerifierTest" time="0.0"/>
-  <testcase name="testCheckPathToInputFile_notFile_2" classname="com.serzhio_pet_projects.input.InputFileVerifierTest" time="0.0"/>
-  <testcase name="testCheckPathToInputFile_notFile_3" classname="com.serzhio_pet_projects.input.InputFileVerifierTest" time="0.0"/>
-  <testcase name="testCheckPathToInputFile_notFile_4" classname="com.serzhio_pet_projects.input.InputFileVerifierTest" time="0.0"/>
-  <testcase name="testCheckPathToInputFile_notFile_5" classname="com.serzhio_pet_projects.input.InputFileVerifierTest" time="0.0"/>
+  <testcase name="testDecode_10" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.004"/>
+  <testcase name="testDecode_12" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.0"/>
+  <testcase name="testDecode_13" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.0"/>
+  <testcase name="testDecode_14" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.0"/>
+  <testcase name="testDecode_15" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.0"/>
+  <testcase name="testDecode_16" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.002"/>
+  <testcase name="testDecode_17" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.001"/>
+  <testcase name="testDecode_18" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.0"/>
+  <testcase name="testDecode_1" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.001"/>
+  <testcase name="testDecode_2" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.0"/>
+  <testcase name="testDecode_3" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.001"/>
+  <testcase name="testDecode_4" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.001"/>
+  <testcase name="testDecode_5" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.001"/>
+  <testcase name="testDecode_6" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.001"/>
+  <testcase name="testDecode_7" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.001"/>
+  <testcase name="testDecode_8" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.0"/>
+  <testcase name="testDecode_9" classname="com.serzhio_pet_projects.decoder.RleDecoderTest" time="0.0"/>
 </testsuite>

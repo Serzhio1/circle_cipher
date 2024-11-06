@@ -6,35 +6,35 @@ import org.junit.Test;
 public class InputFileVerifierTest {
 
     @Test
-    public void testCheckPathToInputFile_notFile1() {
+    public void testCheckPathToInputFile_notFile_1() {
         String inputFilePath = "";
         Object expectedOutput = null;
         assertEquals(expectedOutput, InputFileVerifier.checkPathToInputFile(inputFilePath));
     }
 
     @Test
-    public void testCheckPathToInputFile_notFile2() {
+    public void testCheckPathToInputFile_notFile_2() {
         String inputFilePath = "asdvasdva avasdv";
         Object expectedOutput = null;
         assertEquals(expectedOutput, InputFileVerifier.checkPathToInputFile(inputFilePath));
     }
     
     @Test
-    public void testCheckPathToInputFile_notFile3() {
+    public void testCheckPathToInputFile_notFile_3() {
         String inputFilePath = "asdc";
         Object expectedOutput = null;
         assertEquals(expectedOutput, InputFileVerifier.checkPathToInputFile(inputFilePath));
     }
 
     @Test
-    public void testCheckPathToInputFile_notFile4() {
+    public void testCheckPathToInputFile_notFile_4() {
         String inputFilePath = ".";
         Object expectedOutput = null;
         assertEquals(expectedOutput, InputFileVerifier.checkPathToInputFile(inputFilePath));
     }
 
     @Test
-    public void testCheckPathToInputFile_notFile5() {
+    public void testCheckPathToInputFile_notFile_5() {
         String inputFilePath = "/home/serezha";
         Object expectedOutput = null;
         assertEquals(expectedOutput, InputFileVerifier.checkPathToInputFile(inputFilePath));

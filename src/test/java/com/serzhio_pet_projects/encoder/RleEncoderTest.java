@@ -8,7 +8,7 @@ public class RleEncoderTest {
     @Test
     public void testEncode_oneWord_1() {
         String input = "AAABBBAA";
-        String expectedOutput = "3A3B2A";
+        String expectedOutput = "3A3BAA";
         assertEquals(expectedOutput, RleEncoder.encode(input));
     }
 
@@ -64,7 +64,7 @@ public class RleEncoderTest {
     @Test
     public void testEncode_oneWord_9() {
         String input = "a.,AA";
-        String expectedOutput = "a.,2A";
+        String expectedOutput = "a.,AA";
         assertEquals(expectedOutput, RleEncoder.encode(input));
     }
 
