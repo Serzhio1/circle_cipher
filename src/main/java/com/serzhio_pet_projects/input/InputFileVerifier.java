@@ -1,8 +1,7 @@
 package com.serzhio_pet_projects.input;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.File;
+import java.util.Objects;
 
 
 public class InputFileVerifier {
@@ -15,8 +14,12 @@ public class InputFileVerifier {
             }
     }
 
-    private static boolean checkFileExist(String pathString) {
-        Path path = Paths.get(pathString);
-        return Files.exists(path);
+    private static boolean checkFileExist(String path) {
+        if (Objects.isNull(path) || path.isEmpty()) {
+            return false;
+        } else {
+            File file = new File(path);
+            return file.isFile();
+        }
     }
 }

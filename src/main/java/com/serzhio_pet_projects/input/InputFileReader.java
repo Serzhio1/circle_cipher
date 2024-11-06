@@ -27,7 +27,7 @@ public class InputFileReader {
         }
     }
 
-    private static boolean isFileTextEmpty(StringBuilder text) {
+    private  static boolean isFileTextEmpty(StringBuilder text) {
         return text.isEmpty();
     }
 }
