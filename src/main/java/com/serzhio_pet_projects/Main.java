@@ -32,20 +32,18 @@ public class Main {
                     if ("c_mode".equals(modeOperation)) {
                         String compressedText = RleEncoder.encode(inputData);
                         outputFileWriter.writeCompressedTextToFile(compressedText);
-                        System.out.println("Сжатый текст находится в новом файле, по пути: " + pathToOutputFile);    
                     } else {
                         if ("d_mode".equals(modeOperation)) {
                             String uncompressedText = RleDecoder.decode(inputData);
                             outputFileWriter.writeCompressedTextToFile(uncompressedText);
                             System.out.println("Разжатый текст находится в новом файле, по пути: " + pathToOutputFile);    
                         } else {
-                            System.out.println("Такой операции не сущетсвует, введите: «c_mode» или «d_mode»");
                         }
                     }
+                    System.out.println("Результат находится в новом файле, по пути: " + pathToOutputFile);     
                 } else {
                     System.out.println("В файле не оказалось никакой информации");
                 }
-
             } else {
                 System.out.println("Проверьте, правильно ли вы указали путь до входного файла");
             }
