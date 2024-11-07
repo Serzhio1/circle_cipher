@@ -13,7 +13,7 @@ public class OutputFileWriter {
         this.filePath = filePath;
     }
 
-    public void writeCompressedTextToFile(String text) throws IOException {
+    public void writeResultDataToFile(String text) throws IOException {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filePath))) {
             bufferedWriter.write(text);
         }
