@@ -14,11 +14,12 @@ public class InputFileReader {
 
     public String readTextFromFile() throws IOException {
         StringBuilder result = new StringBuilder();
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
-        String line;
-        while((line=bufferedReader.readLine()) != null) {
-            result.append(line);
-            result.append(" ");
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while((line=bufferedReader.readLine()) != null) {
+                result.append(line);
+                result.append(" ");
+            }
         }
         if (!isFileTextEmpty(result)) {
             return result.toString();

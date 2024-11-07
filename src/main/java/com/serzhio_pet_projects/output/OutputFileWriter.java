@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class OutputFileWriter {
 
-    private String filePath;
+    private final String filePath;
 
     public OutputFileWriter(String filePath) {
         this.filePath = filePath;
@@ -19,12 +19,15 @@ public class OutputFileWriter {
         }
     }
 
-    public static String createPathToOutputFile(String pathToInputFile) {
+    public static String createPathToOutputFile(String pathToInputFile, String modeOperation) {
         StringBuilder pathToOutputFile = new StringBuilder();
         pathToOutputFile.append(pathToInputFile, 0, pathToInputFile.lastIndexOf("."));
-        pathToOutputFile.append("_compressed");
+        if ("c_mode".equals(modeOperation) ) {
+            pathToOutputFile.append("_compressed");
+        } else {
+            pathToOutputFile.append("_uncompressed");
+        }
         pathToOutputFile.append(".txt");
-
         return pathToOutputFile.toString();
     }
 }
