@@ -1,6 +1,5 @@
 package com.serzhio_pet_projects;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -13,7 +12,7 @@ import static com.serzhio_pet_projects.output.OutputFileWriter.createPathToOutpu
 
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) throws IOException {
 
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Введите абсолютный путь к файлу: ");
@@ -28,29 +27,29 @@ public class Main {
             InputFileReader inputFileReader = new InputFileReader(pathToInputFile);
             String inputData = inputFileReader.readTextFromFile();
 
-            if (inputData != null) {
-                System.out.print("Выберете операцию: «c_mode» - сжатие данных, «d_mode» - восстановление данных: ");
-                String modeOperation = scanner.nextLine();
-
-                while (!modeOperation.equals("c_mode") & !modeOperation.equals("d_mode")) {
-                    System.out.print("Такой операции нет. Выберете: «c_mode» - сжатие данных, «d_mode» - восстановление данных: ");
-                    modeOperation = scanner.nextLine();
-                }
-
-                String pathToOutputFile = createPathToOutputFile(pathToInputFile, modeOperation);
-                OutputFileWriter outputFileWriter = new OutputFileWriter(pathToOutputFile);
-
-                switch (modeOperation) {
-                    case "c_mode" -> resultData = RleEncoder.encode(inputData);
-                    case "d_mode" -> resultData = RleDecoder.decode(inputData);
-                }
-
-                outputFileWriter.writeResultDataToFile(resultData);
-                System.out.println("Результат находится в новом файле, по пути: " + pathToOutputFile);
-
-            } else {
+            if (inputData == null) {
                 System.out.println("В файле не оказалось никакой информации");
+                return;
             }
+            
+            System.out.print("Выберете операцию: «c_mode» - сжатие данных, «d_mode» - восстановление данных: ");
+            String modeOperation = scanner.nextLine();
+
+            while (!modeOperation.equals("c_mode") & !modeOperation.equals("d_mode")) {
+                System.out.print("Такой операции нет. Выберете: «c_mode» - сжатие данных, «d_mode» - восстановление данных: ");
+                modeOperation = scanner.nextLine();
+            }
+
+            String pathToOutputFile = createPathToOutputFile(pathToInputFile, modeOperation);
+            OutputFileWriter outputFileWriter = new OutputFileWriter(pathToOutputFile);
+
+            switch (modeOperation) {
+                case "c_mode" -> resultData = RleEncoder.encode(inputData);
+                case "d_mode" -> resultData = RleDecoder.decode(inputData);
+            }
+
+            outputFileWriter.writeResultDataToFile(resultData);
+            System.out.println("Результат находится в новом файле, по пути: " + pathToOutputFile);
         }
     }
 }
