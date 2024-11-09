@@ -3,9 +3,10 @@ package com.serzhio_pet_projects;
 import java.io.IOException;
 import java.util.Scanner;
 
+import static com.serzhio_pet_projects.analyzer.FileMetaData.printCompressedInfo;
 import com.serzhio_pet_projects.decoder.RleDecoder;
 import com.serzhio_pet_projects.encoder.RleEncoder;
-import com.serzhio_pet_projects.input.InputFileReader;
+import static com.serzhio_pet_projects.input.InputFileReader.readTextFromFile;
 import static com.serzhio_pet_projects.input.InputFileVerifier.checkPathToInputFile;
 import com.serzhio_pet_projects.output.OutputFileWriter;
 import static com.serzhio_pet_projects.output.OutputFileWriter.createPathToOutputFile;
@@ -24,8 +25,7 @@ public class Main {
                 pathToInputFile = scanner.nextLine();
             }
 
-            InputFileReader inputFileReader = new InputFileReader(pathToInputFile);
-            String inputData = inputFileReader.readTextFromFile();
+            String inputData = readTextFromFile(pathToInputFile);
 
             if (inputData == null) {
                 System.out.println("В файле не оказалось никакой информации");
@@ -44,7 +44,10 @@ public class Main {
             OutputFileWriter outputFileWriter = new OutputFileWriter(pathToOutputFile);
 
             switch (modeOperation) {
-                case "c_mode" -> resultData = RleEncoder.encode(inputData);
+                case "c_mode" -> {
+                    resultData = RleEncoder.encode(inputData); 
+                    printCompressedInfo(pathToInputFile, pathToOutputFile);
+                }
                 case "d_mode" -> resultData = RleDecoder.decode(inputData);
             }
 

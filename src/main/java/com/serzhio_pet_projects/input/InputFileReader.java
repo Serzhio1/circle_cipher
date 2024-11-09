@@ -6,13 +6,8 @@ import java.io.IOException;
 
 
 public class InputFileReader {
-    private final String filePath;
 
-    public InputFileReader(String filePath) {
-        this.filePath = filePath;
-    }
-
-    public String readTextFromFile() throws IOException {
+    public static String readTextFromFile(String filePath) throws IOException {
         StringBuilder result = new StringBuilder();
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath))) {
             String line;
@@ -28,7 +23,7 @@ public class InputFileReader {
         }
     }
 
-    private  static boolean isFileTextEmpty(StringBuilder text) {
+    private static boolean isFileTextEmpty(StringBuilder text) {
         return text.isEmpty();
     }
 }
