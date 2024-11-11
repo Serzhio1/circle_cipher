@@ -3,7 +3,8 @@ package com.serzhio_pet_projects;
 import java.io.IOException;
 import java.util.Scanner;
 
-import static com.serzhio_pet_projects.analyzer.FileMetaData.printCompressedInfo;
+import static com.serzhio_pet_projects.analyzer.FileMetaData.printInfoAboutCompress;
+import static com.serzhio_pet_projects.analyzer.FileMetaData.printInfoAboutUncompress;
 import com.serzhio_pet_projects.decoder.RleDecoder;
 import com.serzhio_pet_projects.encoder.RleEncoder;
 import static com.serzhio_pet_projects.input.InputFileReader.readTextFromFile;
@@ -18,7 +19,7 @@ public class Main {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Введите абсолютный путь к файлу: ");
             String pathToInputFile = scanner.nextLine();
-            String resultData = new String();
+            String resultData;
 
             while (checkPathToInputFile(pathToInputFile) == null) {
                 System.out.print("Путь до входного файла указан неверно. Повторите попытку: ");
@@ -45,13 +46,16 @@ public class Main {
 
             switch (modeOperation) {
                 case "c_mode" -> {
-                    resultData = RleEncoder.encode(inputData); 
-                    printCompressedInfo(pathToInputFile, pathToOutputFile);
+                    resultData = RleEncoder.encode(inputData);
+                    outputFileWriter.writeResultDataToFile(resultData); 
+                    printInfoAboutCompress(pathToInputFile, pathToOutputFile);
                 }
-                case "d_mode" -> resultData = RleDecoder.decode(inputData);
-            }
-
-            outputFileWriter.writeResultDataToFile(resultData);
+                case "d_mode" ->  {
+                    resultData = RleDecoder.decode(inputData);
+                    outputFileWriter.writeResultDataToFile(resultData);
+                    printInfoAboutUncompress(pathToOutputFile, pathToInputFile); 
+                }
+            }            
             System.out.println("Результат находится в новом файле, по пути: " + pathToOutputFile);
         }
     }

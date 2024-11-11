@@ -7,7 +7,7 @@ import static com.serzhio_pet_projects.tools.MathUtils.roundAvoid;
 
 public class FileMetaData {
 
-    public static void printCompressedInfo(String uncompressedFilePath, String compressedFilePath) throws IOException {
+    public static void printInfoAboutCompress(String uncompressedFilePath, String compressedFilePath) throws IOException {
         long sizeUncompressedFile = getFileSize(uncompressedFilePath);
         long sizeCompressedFile = getFileSize(compressedFilePath);
         double сompressionEfficiencyForSize = getCompressionEfficiencyForSize(sizeUncompressedFile, sizeCompressedFile);
@@ -15,6 +15,16 @@ public class FileMetaData {
         System.out.println("Размер файла до сжатия: " + sizeUncompressedFile +  " байт");
         System.out.println("Размер файла после сжатия: " + sizeCompressedFile +  " байт");
         System.out.println("Файл был сжат на " + сompressionEfficiencyForSize + " %");
+    }
+
+    public static void printInfoAboutUncompress(String uncompressedFilePath, String compressedFilePath) throws IOException {
+        long sizeUncompressedFile = getFileSize(uncompressedFilePath);
+        long sizeCompressedFile = getFileSize(compressedFilePath);
+        double сompressionEfficiencyForSize = getCompressionEfficiencyForSize(sizeUncompressedFile, sizeCompressedFile);
+
+        System.out.println("Размер файла до восстановления: " + sizeCompressedFile +  " байт");
+        System.out.println("Размер файла после восстановления: " + sizeUncompressedFile +  " байт");
+        System.out.println("До восстановления файл был сжат на " + сompressionEfficiencyForSize + " %");
     }
 
     private static long getFileSize(String filePath){
