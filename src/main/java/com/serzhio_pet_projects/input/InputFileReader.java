@@ -17,7 +17,7 @@ public class InputFileReader {
             }
         }
         if (!isFileTextEmpty(result)) {
-            return result.toString();
+            return result.toString().replaceFirst("\\$$", "");
         } else {
             return null;
         }

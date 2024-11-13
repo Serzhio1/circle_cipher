@@ -27,6 +27,10 @@ public class Main {
             }
 
             String inputData = readTextFromFile(pathToInputFile);
+            char[] charArray = inputData.toCharArray();
+            for (char c: charArray) {
+                System.out.println(c);
+            }
 
             if (inputData == null) {
                 System.out.println("В файле не оказалось никакой информации");
