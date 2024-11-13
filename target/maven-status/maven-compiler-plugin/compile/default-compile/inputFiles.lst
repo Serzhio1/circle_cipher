@@ -1,8 +1,8 @@
-/home/serezha/javaProjects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/Main.java
-/home/serezha/javaProjects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/analyzer/FileMetaData.java
-/home/serezha/javaProjects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/decoder/RleDecoder.java
-/home/serezha/javaProjects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/encoder/RleEncoder.java
-/home/serezha/javaProjects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/input/InputFileReader.java
-/home/serezha/javaProjects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/input/InputFileVerifier.java
-/home/serezha/javaProjects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/output/OutputFileWriter.java
-/home/serezha/javaProjects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/tools/MathUtils.java
+/home/serzhio/java_projects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/Main.java
+/home/serzhio/java_projects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/analyzer/FileMetaData.java
+/home/serzhio/java_projects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/decoder/RleDecoder.java
+/home/serzhio/java_projects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/encoder/RleEncoder.java
+/home/serzhio/java_projects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/input/InputFileReader.java
+/home/serzhio/java_projects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/input/InputFileVerifier.java
+/home/serzhio/java_projects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/output/OutputFileWriter.java
+/home/serzhio/java_projects/pet_projects/circle_cipher/src/main/java/com/serzhio_pet_projects/tools/MathUtils.java
