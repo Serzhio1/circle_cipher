@@ -7,20 +7,39 @@ public class RleDecoder {
         if (encodeText.length()==1) {
             return encodeText;
         } else {
+            String[] words = encodeText.split(" ");
+
             StringBuilder resultString = new StringBuilder();
             String suffix;
-    
-            String[] words = encodeText.split(" ");
+            boolean makeBigNumber = false;
+            StringBuilder bigNumber = new StringBuilder();
+             
             for (String word: words) {
                 for (int i=0; i<word.length(); i++) {
-                    char cur_cymbol = word.charAt(i);
-                    if (Character.isDigit(cur_cymbol)) {
-                        int count_repeat = Character.getNumericValue(cur_cymbol);
-                        suffix = String.valueOf(word.charAt(i+1)).repeat(count_repeat); 
-                        resultString.append(suffix);
-                        i++;
+                    char curСymbol = word.charAt(i);
+                    if (Character.isDigit(curСymbol)) {
+                        if (makeBigNumber) {
+                            bigNumber.append(curСymbol);
+                            if (!Character.isDigit(word.charAt(i+1))) {
+                                int count_repeat = Integer.parseInt(bigNumber.toString());
+                                suffix = String.valueOf(word.charAt(i+1)).repeat(count_repeat); 
+                                resultString.append(suffix);
+                                makeBigNumber = false;
+                                i++;
+                            }
+                        } else {
+                            if (Character.isDigit(word.charAt(i+1))) {
+                                bigNumber.append(curСymbol);
+                                makeBigNumber = true;
+                            } else {
+                                int count_repeat = Character.getNumericValue(curСymbol);
+                                suffix = String.valueOf(word.charAt(i+1)).repeat(count_repeat); 
+                                resultString.append(suffix);
+                                i++;
+                            }
+                        }
                     } else {
-                        resultString.append(cur_cymbol);
+                        resultString.append(curСymbol);
                     }
                 }
                 resultString.append(" ");

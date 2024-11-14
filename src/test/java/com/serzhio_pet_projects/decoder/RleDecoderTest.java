@@ -124,8 +124,24 @@ public class RleDecoderTest {
         assertEquals(expectedOutput, RleDecoder.decode(encodeText));
     }
 
+    @Test
+    public void testDecode_19() {
+        String encodeText = "16A";
+        String expectedOutput = "AAAAAAAAAAAAAAAA";
+        assertEquals(expectedOutput, RleDecoder.decode(encodeText));
+    }
 
+    @Test
+    public void testDecode_20() {
+        String encodeText = "16AB";
+        String expectedOutput = "AAAAAAAAAAAAAAAAB";
+        assertEquals(expectedOutput, RleDecoder.decode(encodeText));
+    }
 
-
-
+    @Test
+    public void testDecode_21() {
+        String encodeText = "A16B";
+        String expectedOutput = "ABBBBBBBBBBBBBBBB";
+        assertEquals(expectedOutput, RleDecoder.decode(encodeText));
+    }
 }

@@ -104,6 +104,27 @@ public class RleEncoderTest {
     }
 
     @Test
+    public void testEncode_oneWord_15() {
+        String input = "Ab16";
+        String expectedOutput = "Ab16";
+        assertEquals(expectedOutput, RleEncoder.encode(input));
+    }
+
+    @Test
+    public void testEncode_oneWord_16() {
+        String input = "16AbA";
+        String expectedOutput = "16AbA";
+        assertEquals(expectedOutput, RleEncoder.encode(input));
+    }
+
+    @Test
+    public void testEncode_oneWord_17() {
+        String input = "A16bA";
+        String expectedOutput = "A16bA";
+        assertEquals(expectedOutput, RleEncoder.encode(input));
+    }
+
+    @Test
     public void testEncode_someWords_1() {
         String input = "a b";
         String expectedOutput = "a b";
